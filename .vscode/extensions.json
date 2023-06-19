@@ -2,6 +2,11 @@
   "recommendations": [
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    "prisma.prisma"
+    "prisma.prisma",
+    "esbenp.prettier-vscode",
+    "mikestead.dotenv",
+    "Orta.vscode-jest",
+    "editorconfig.editorconfig",
+    "mgmcdermott.vscode-language-babel"
   ]
 }
