@@ -3,7 +3,7 @@ import { FormJSON, FieldType } from './types';
 export const formJson: FormJSON = {
   fields: [
     {
-      type: FieldType.Input,
+      type: FieldType.TextInput,
       role: 'admin',
       label: 'Username',
       data: null,
