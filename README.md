@@ -1,88 +1,67 @@
-# Prisma + tRPC
+# AI Form Generator
 
-## Features
+AI Form Generator is an advanced tool leveraging artificial intelligence to create dynamic, role-based forms with React, Next.js, and the Mantine UI library. The tool includes an embedded validation mechanism using Joi JS, providing a robust solution for generating and validating sophisticated forms with ease.
 
-- 🧙‍♂️ E2E typesafety with [tRPC](https://trpc.io)
-- ⚡ Full-stack React with Next.js
-- ⚡ Database with Prisma
-- ⚙️ VSCode extensions
-- 🎨 ESLint + Prettier
-- 💚 CI setup using GitHub Actions:
-  - ✅ E2E testing with [Playwright](https://playwright.dev/)
-  - ✅ Linting
-- 🔐 Validates your env vars on build and start
+## Table of Contents
 
-## Setup
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Project Structure](#project-structure)
+4. [Contributing](#contributing)
+5. [License](#license)
 
-```bash
-pnpm create next-app --example https://github.com/trpc/trpc --example-path examples/next-prisma-starter trpc-prisma-starter
-cd trpc-prisma-starter
-pnpm
-pnpm dx
+## Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/jatidevelopments/trcp-ai-form-generator.git
 ```
 
-### Requirements
+Navigate to the project directory:
 
-- Node >= 14
-- Postgres
-
-## Development
-
-### Start project
-
-```bash
-pnpm create next-app --example https://github.com/trpc/trpc --example-path examples/next-prisma-starter trpc-prisma-starter
-cd trpc-prisma-starter
-pnpm
-pnpm dx
+```
+cd trcp-ai-form-generator
 ```
 
-### Commands
+Install the dependencies:
 
-```bash
-pnpm build      # runs `prisma generate` + `prisma migrate` + `next build`
-pnpm db-reset   # resets local db
-pnpm dev        # starts next.js
-pnpm dx         # starts postgres db + runs migrations + seeds + starts next.js
-pnpm test-dev   # runs e2e tests on dev
-pnpm test-start # runs e2e tests on `next start` - build required before
-pnpm test:unit  # runs normal Vitest unit tests
-pnpm test:e2e   # runs e2e tests
+```
+yarn install
 ```
 
-## Deployment
+## Usage
 
-### Using [Render](https://render.com/)
+Start the dev server:
 
-The project contains a [`render.yaml`](./render.yaml) [_"Blueprint"_](https://render.com/docs/blueprint-spec) which makes the project easily deployable on [Render](https://render.com/).
+```
+yarn dev
+```
 
-Go to [dashboard.render.com/blueprints](https://dashboard.render.com/blueprints) and connect to this Blueprint and see how the app and database automatically gets deployed.
+Build the prod server:
 
-## Files of note
+```
+yarn build
+```
 
-<table>
-  <thead>
-    <tr>
-      <th>Path</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="./prisma/schema.prisma"><code>./prisma/schema.prisma</code></a></td>
-      <td>Prisma schema</td>
-    </tr>
-    <tr>
-      <td><a href="./src/pages/api/trpc/[trpc].ts"><code>./src/pages/api/trpc/[trpc].ts</code></a></td>
-      <td>tRPC response handler</td>
-    </tr>
-    <tr>
-      <td><a href="./src/server/routers"><code>./src/server/routers</code></a></td>
-      <td>Your app's different tRPC-routers</td>
-    </tr>
-  </tbody>
-</table>
+Start the prod server:
 
----
+```
+yarn start
+```
 
-Created by [@alexdotjs](https://twitter.com/alexdotjs).
+Then, navigate to `http://localhost:3000` to start using the form generator. It provides a user-friendly interface to guide you through creating complex forms with AI assistance.
+
+## Project Structure
+
+- `src/components`: This directory contains all the React components.
+- `src/pages`: This directory contains all the Next.js pages.
+- `src/utils`: This directory contains all utility functions.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://github.com/jatidevelopments/trcp-ai-form-generator/issues) if you want to contribute.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
