@@ -15,13 +15,13 @@ AI Form Generator is an advanced tool leveraging artificial intelligence to crea
 Clone the repository:
 
 ```
-git clone https://github.com/jatidevelopments/trcp-ai-form-generator.git
+git clone https://github.com/jatidevelopments/mantine-ai-form-generator.git
 ```
 
 Navigate to the project directory:
 
 ```
-cd trcp-ai-form-generator
+cd mantine-ai-form-generator
 ```
 
 Install the dependencies:
